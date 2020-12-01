@@ -21,14 +21,13 @@
       </div>
   </header>
 
-  <!-- <div class="cds-container container">
-      <select class="" name="">
-        <option value=""@click>Jazz</option>
-        <option value="" @click>Rock</option>
-        <option value="">Metal</option>
-        <option value="">Pop</option> -->
-
-      </select>
+  <div class="cds-container container">
+      <!-- <select class="" name="">
+        <option value="">jazz</option>
+        <option value="">rock</option>
+        <option value="">me</option>
+        <option value=""></option>
+      </select> -->
       <div class="cd" v-for='el in musicList[0]'>
           <img :src="el.poster" alt="">
           <h3>{{el.title}}</h3>

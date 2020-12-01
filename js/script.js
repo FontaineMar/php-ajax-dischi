@@ -15,7 +15,7 @@ const myApp = new Vue({
       this.musicList.push([...response])
     console.log(this.musicList)});
   },
-  methods:{}
+  
 
 
 
