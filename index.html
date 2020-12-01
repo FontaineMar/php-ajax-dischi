@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>music</title>
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- VUE 2.6.12 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+
+    <!-- AXOS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+  </head>
+  <body>
+<div id="root">
+  <header>
+      <div class="container">
+          <img src="" alt="logo" />
+      </div>
+  </header>
+
+  <!-- <div class="cds-container container">
+      <select class="" name="">
+        <option value=""@click>Jazz</option>
+        <option value="" @click>Rock</option>
+        <option value="">Metal</option>
+        <option value="">Pop</option> -->
+
+      </select>
+      <div class="cd" v-for='el in musicList[0]'>
+          <img :src="el.poster" alt="">
+          <h3>{{el.title}}</h3>
+          <span class="author">{{el.author}}</span>
+          <span class="year">{{el.year}}</span>
+      </div>
+  </div>
+</div>
+
+
+<!-- script -->
+<script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
