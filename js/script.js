@@ -12,10 +12,10 @@ const myApp = new Vue({
     axios.get(this.url)
       .then((music)=> {
         let {response} = music.data
-      this.musicList.push([...response])
+      this.musicList.push(...response)
     console.log(this.musicList)});
   },
-  
+
 
 
 
