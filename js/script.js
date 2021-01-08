@@ -2,14 +2,14 @@ const myApp = new Vue({
   el:'#root',
   data:{
     musicList:[],
-    url:'https://flynn.boolean.careers/exercises/api/array/music',
+    url:'http://localhost:8888/esercizi-php/php-ajax-dischi/database.php',
     jazzMusic:[],
     metalMusic:[],
     rockMusic:[],
     popMusic:[]
   },
   mounted:function(){
-    axios.get(this.url)
+    axios.get('http://localhost:8888/esercizi-php/php-ajax-dischi/database.php')
       .then((music)=> {
         let {response} = music.data
       this.musicList.push(...response)

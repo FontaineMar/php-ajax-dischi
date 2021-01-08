@@ -4,9 +4,12 @@
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
 }
+img {
+  background-color: #1E2D3B;
+}
 
 body {
-    background: #1E2D3B;
+    background-color: #1E2D3B;
     min-height: 100vh;
 }
 
